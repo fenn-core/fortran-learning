@@ -66,3 +66,8 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Build and IDE related
+cmake-build-debug
+.idea 
+
