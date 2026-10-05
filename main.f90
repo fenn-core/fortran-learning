@@ -1,9 +1,12 @@
 program main
     use iso_fortran_env, only: real64
     use trig
+    use calculus
+    implicit none
 
-    real(real64) :: f(100)
     real(real64) :: x(100)
+    real(real64) :: y(100)
+    real(real64) :: f(100)
     integer :: n
     integer :: i
 
@@ -13,7 +16,11 @@ program main
     end do
 
 
-     f = sin_array(x, n)
+     y = sin(x)
+
+    print *, y
+
+    f = central_difference_derivative(x, y, n)
 
     print *, f
 
