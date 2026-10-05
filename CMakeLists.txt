@@ -8,4 +8,5 @@ add_executable(fortran-learning main.f90)
 target_sources(fortran-learning PRIVATE
         main.f90
         trig.f90
+        calculus.f90
 )
